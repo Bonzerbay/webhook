@@ -5,8 +5,8 @@ const app = express();
 app.post('/webhook', (req, res)=>{
 
     console.log('payment successful!');
-    console.log(req.body);
     res.sendStatus(200)
+    console.log(req.body);
 })
 
 app.listen(3000, ()=> console.log('Connected'));
